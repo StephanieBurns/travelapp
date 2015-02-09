@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @profile.user_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @profile.name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @profile.age %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @profile.gender %>
+</p>
+
+<p>
+  <strong>Seeking gender:</strong>
+  <%= @profile.seeking_gender %>
+</p>
+
+<p>
+  <strong>Destination:</strong>
+  <%= @profile.destination %>
+</p>
+
+<p>
+  <strong>Arrival date:</strong>
+  <%= @profile.arrival_date %>
+</p>
+
+<p>
+  <strong>Departure date:</strong>
+  <%= @profile.departure_date %>
+</p>
+
+<p>
+  <strong>About me:</strong>
+  <%= @profile.about_me %>
+</p>
+
+<%= link_to 'Edit', edit_profile_path(@profile) %> |
+<%= link_to 'Back', profiles_path %>

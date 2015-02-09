@@ -1,0 +1,53 @@
+<%= form_for(@profile) do |f| %>
+  <% if @profile.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@profile.errors.count, "error") %> prohibited this profile from being saved:</h2>
+
+      <ul>
+      <% @profile.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :age %><br>
+    <%= f.number_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :gender %><br>
+    <%= f.text_field :gender %>
+  </div>
+  <div class="field">
+    <%= f.label :seeking_gender %><br>
+    <%= f.text_field :seeking_gender %>
+  </div>
+  <div class="field">
+    <%= f.label :destination %><br>
+    <%= f.text_field :destination %>
+  </div>
+  <div class="field">
+    <%= f.label :arrival_date %><br>
+    <%= f.date_select :arrival_date %>
+  </div>
+  <div class="field">
+    <%= f.label :departure_date %><br>
+    <%= f.date_select :departure_date %>
+  </div>
+  <div class="field">
+    <%= f.label :about_me %><br>
+    <%= f.text_field :about_me %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,5 +1,5 @@
 User.create(:email => 'd@gmail.com', :password => 'foobar12', :password_confirmation => 'foobar12')
-Profile.create(:user_id => User.where(email: 'd@gmail.com').first.id  :name => 'Doris', :age => 35, :gender => 'female', :seeking_gender => 'male', :destination => 'Bali', :arrival_date => Date.parse("2015-02-09") , :departure_date => Date.parse("2015-03-09"), :about_me => "I'm an older lady")
+Profile.create(:user_id => User.where(email: 'd@gmail.com').first.id, :name => 'Doris', :age => 35, :gender => 'female', :seeking_gender => 'male', :destination => 'Bali', :arrival_date => Date.parse("2015-02-09") , :departure_date => Date.parse("2015-03-09"), :about_me => "I'm an older lady")
 
 User.create(:email => 'c@gmail.com', :password => 'foobar12', :password_confirmation => 'foobar12')
 Profile.create(:name => 'Shirley', :age => 25, :gender => 'female', :seeking_gender => 'male', :destination => 'Bali', :arrival_date => Date.parse("2015-02-09") , :departure_date => Date.parse("2015-03-09"), :about_me => "I never joke and don't call me Shirley.")
